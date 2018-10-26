@@ -17,9 +17,9 @@ public class TransactionHandler1 implements InvocationHandler {
     }
 
     /**
-     * @param proxy 参数是Object类型，是真实的实现类对象
-     * @param method 参数是Method类型，代表调用的方法
-     * @param args 参数是Object类型，代表的是调用方法的参数
+     * @param proxy 参数是Object类型，是目标类的类加载器
+     * @param method 参数是Method类型，是目标类实现的接口集合
+     * @param args 参数是Object类型，是InvocationHandler实例
      */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

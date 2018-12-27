@@ -2,6 +2,7 @@ package singleton;
 
 public enum SingletonEnum {
     INSTANCE;
-    public void whateverMethod() {
+    public SingletonEnum getInstance() {
+        return INSTANCE;
     }
 }
